@@ -4,56 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Giới Thiệu Cá Nhân - Nguyễn Văn A</title>
+    <!-- Link Font chữ Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link file CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- THÔNG TIN CHÍNH -->
-    <header>
-        <h1>Trang Giới Thiệu Cá Nhân</h1>
-        
-        <!-- Hình ảnh đại diện (Đổi tên file 'avatar.jpg' đúng với file ảnh trong thư mục images) -->
-        <img src="images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Văn A" width="180">
+    <div class="profile-container">
+        <!-- Nút quay lại trang chủ -->
+        <a href="../../index.html" class="back-btn">← Quay lại trang chủ</a>
 
-        <h2>Nguyễn Văn A</h2>
-    </header>
+        <!-- THÔNG TIN CHÍNH -->
+        <header class="profile-header">
+            <div class="avatar-box">
+                <!-- Thay tên file ảnh đúng trong thư mục images của bạn -->
+                <img src="images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Văn A" class="profile-avatar">
+            </div>
 
-    <hr>
+            <div class="header-info">
+                <h1 class="user-name">Nguyễn Văn A</h1>
+                <span class="user-role">Thành viên</span>
 
-    <!-- THÔNG TIN CƠ BẢN -->
-    <section>
-        <h3>Thông Tin Cơ Bản</h3>
-        <ul>
-            <li><strong>Họ và tên:</strong> Nguyễn Văn A</li>
-            <li><strong>Mã sinh viên:</strong> 12345678</li>
-            <li><strong>Ngày sinh:</strong> 01/01/2004</li>
-            <li><strong>Giới tính:</strong> Nam</li>
-            <li><strong>Lớp:</strong> CNTT01</li>
-            <li><strong>Ngành:</strong> Công nghệ thông tin</li>
-        </ul>
-    </section>
+                <ul class="info-list">
+                    <li><strong>Họ và tên:</strong> Nguyễn Văn A</li>
+                    <li><strong>Mã sinh viên:</strong> 12345678</li>
+                    <li><strong>Ngày sinh:</strong> 01/01/2004</li>
+                    <li><strong>Giới tính:</strong> Nam</li>
+                    <li><strong>Lớp:</strong> CNTT01</li>
+                    <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                </ul>
+            </div>
+        </header>
 
-    <hr>
+        <hr class="divider">
 
-    <!-- ĐẶC ĐIỂM CÁ NHÂN -->
-    <section>
-        <h3>Sở Thích & Sở Trường</h3>
-        <ul>
-            <li><strong>Sở thích:</strong> Đọc sách công nghệ, đá bóng, nghe nhạc, đi du lịch.</li>
-            <li><strong>Sở trường:</strong> Lập trình HTML/CSS cơ bản, tư duy logic, làm việc nhóm.</li>
-        </ul>
-    </section>
+        <!-- ĐẶC ĐIỂM CÁ NHÂN & MỤC TIÊU -->
+        <div class="details-grid">
+            <section class="info-card">
+                <h3>Sở Thích & Sở Trường</h3>
+                <ul>
+                    <li><strong>Sở thích:</strong> Đọc sách công nghệ, đá bóng, nghe nhạc, đi du lịch.</li>
+                    <li><strong>Sở trường:</strong> Lập trình HTML/CSS cơ bản, tư duy logic, làm việc nhóm.</li>
+                </ul>
+            </section>
 
-    <hr>
+            <section class="info-card">
+                <h3>Kỹ Năng & Mục Tiêu</h3>
+                <ul>
+                    <li><strong>Kỹ năng:</strong> Git/GitHub cơ bản, Tiếng Anh giao tiếp.</li>
+                    <li><strong>Mục tiêu:</strong> Trở thành một Web Developer chuyên nghiệp trong tương lai.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 
-    <!-- BỔ SUNG KHUYẾN KHÍCH -->
-    <section>
-        <h3>Kỹ Năng & Mục Tiêu</h3>
-        <ul>
-            <li><strong>Kỹ năng:</strong> Git/GitHub cơ bản, Tiếng Anh giao tiếp.</li>
-            <li><strong>Mục tiêu:</strong> Trở thành một Web Developer chuyên nghiệp trong tương lai.</li>
-        </ul>
-    </section>
-
-    <hr>
 </body>
 </html>
