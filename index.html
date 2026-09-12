@@ -1,37 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Sửa tên nhóm tại đây -->
-    <title>Hệ thống bài tập Lập trình Web</title>
-
+    <title>Hệ Thống Bài Tập Lập Trình Web - Nhóm 3</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1>Nhóm 3</h1>
+    <div class="container">
+        <!-- Banner Header -->
+        <header class="header">
+            <div class="header-badge">
+                <span class="pulse-dot"></span> ĐỒ ÁN WEB - NHÓM 3
+            </div>
+            <h1 class="main-title">HỆ THỐNG BÀI TẬP LẬP TRÌNH WEB</h1>
+            <p class="sub-title">Không gian tổng hợp các bài tập, dự án cá nhân và làm việc nhóm</p>
+        </header>
 
-    <!-- ✅ Phần bài làm cá nhân -->
-    <div class="section">
-        <h2>✅ Bài tập cá nhân</h2>
-        <div class="task-list">
-            <a href="tasks/Huy_Sam_Quang/index.html">Sầm Quang Huy</a>
-            <a href="tasks/Nguyen_Thi_Chi/index.html">Nguyễn Thị Chi</a>
-            <a href="tasks/Nguyen_Thi_Hong_Nhung/index.html">Nguyễn Thị Hồng Nhung</a>
-            <a href="tasks/Pham_Nhat_Hung/index.html">Phạm Nhật Hưng</a>
-        </div>
+        <!-- Khối 1: Thông tin thành viên -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="icon">👥</span> Thành viên nhóm
+                </h2>
+                <span class="section-tag">4 Thành viên</span>
+            </div>
+            
+            <div class="member-grid">
+                <!-- Sầm Quang Huy -->
+                <a href="tasks/Huy_Sam_Quang/index.html" class="member-card">
+                    <div class="avatar-ring">
+                        <img src="tasks/Huy_Sam_Quang/images/huysq.jpg" alt="Sầm Quang Huy" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Sam+Quang+Huy&background=6366f1&color=fff'">
+                    </div>
+                    <span class="member-name">Sầm Quang Huy</span>
+                    <span class="member-role leader">Trưởng nhóm</span>
+                </a>
+
+                <!-- Nguyễn Thị Chi -->
+                <a href="tasks/Nguyen_Thi_Chi/index.html" class="member-card">
+                    <div class="avatar-ring">
+                        <img src="tasks/Nguyen_Thi_Chi/images/avatar.jpg" alt="Nguyễn Thị Chi" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Nguyen+Thi+Chi&background=06b6d4&color=fff'">
+                    </div>
+                    <span class="member-name">Nguyễn Thị Chi</span>
+                    <span class="member-role">Thành viên</span>
+                </a>
+
+                <!-- Nguyễn Thị Hồng Nhung -->
+                <a href="tasks/Nguyen_Thi_Hong_Nhung/index.html" class="member-card">
+                    <div class="avatar-ring">
+                        <img src="tasks/Nguyen_Thi_Hong_Nhung/images/avatar.jpg" alt="Nguyễn Thị Hồng Nhung" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Nguyen+Thi+Hong+Nhung&background=ec4899&color=fff'">
+                    </div>
+                    <span class="member-name">Nguyễn Thị Hồng Nhung</span>
+                    <span class="member-role">Thành viên</span>
+                </a>
+
+                <!-- Phạm Nhật Hưng -->
+                <a href="tasks/Pham_Nhat_Hung/index.html" class="member-card">
+                    <div class="avatar-ring">
+                        <img src="tasks/Pham_Nhat_Hung/images/avatar.jpg" alt="Phạm Nhật Hưng" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Pham+Nhat+Hung&background=10b981&color=fff'">
+                    </div>
+                    <span class="member-name">Phạm Nhật Hưng</span>
+                    <span class="member-role">Thành viên</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Khối 2: Bài tập nhóm -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="icon">🚀</span> Dự án & Bài tập nhóm
+                </h2>
+            </div>
+            
+            <div class="group-list">
+                <!-- Trang tin tức -->
+                <a href="tasks/group/news/index.html" class="group-item">
+                    <div class="group-icon">📰</div>
+                    <div class="group-info">
+                        <span class="group-title">Trang tin tức</span>
+                        <span class="group-desc">Giao diện cập nhật thông tin, bài viết và sự kiện dự án</span>
+                    </div>
+                    <div class="arrow-box">➔</div>
+                </a>
+
+                <!-- To-do list -->
+                <a href="tasks/group/todolist/index.html" class="group-item">
+                    <div class="group-icon">✅</div>
+                    <div class="group-info">
+                        <span class="group-title">To-do List</span>
+                        <span class="group-desc">Ứng dụng quản lý và tiến độ công việc của từng thành viên</span>
+                    </div>
+                    <div class="arrow-box">➔</div>
+                </a>
+            </div>
+        </section>
     </div>
 
-    <!-- ✅ Phần bài làm nhóm -->
-    <div class="section">
-        <h2>✅ Bài tập nhóm</h2>
-        <div class="task-list">
-            <a href="tasks/group/about.html">Giới thiệu</a>
-            <a href="tasks/group/news/index.html">Trang tin tức</a>
-            <a href="tasks/group/todolist/index.html">To-do list</a>
-        </div>
-    </div>
 </body>
 </html>

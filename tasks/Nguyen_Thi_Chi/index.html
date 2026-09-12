@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Giới Thiệu Cá Nhân - Nguyễn Thị Chi</title>
+    <title>Trang Giới Thiệu Cá Nhân - Nguyễn Thị Chi </title>
+    <!-- Link Font chữ Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link file CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- THÔNG TIN CHÍNH -->
-    <header>
-        <h1>Trang Giới Thiệu Cá Nhân</h1>
+    <div class="profile-container">
+        <!-- Nút quay lại trang chủ -->
+        <a href="../../index.html" class="back-btn">← Quay lại trang chủ</a>
 
-        <!-- Hình ảnh đại diện -->
-        <img src="images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Thị Chi" width="150">
+        <!-- THÔNG TIN CHÍNH -->
+        <header class="profile-header">
+            <div class="avatar-box">
+                <!-- Thay tên file ảnh đúng trong thư mục images của bạn -->
+               <img src="images\avatar.jpg" alt="Ảnh đại diện của Nguyễn Thị Chi " class="profile-avatar">
+            </div>
 
-        <h2>Nguyễn Thị Chi</h2>
-    </header>
+            <div class="header-info">
+                <h1 class="user-name">Nguyễn Thị Chi </h1>
+                <span class="user-role">Thành viên</span>
 
-    <hr>
+                <ul class="info-list">
+                    <li><strong>Họ và tên:</strong> Nguyễn Thị Chi </li>
+                    <li><strong>Mã sinh viên:</strong> 24103418</li>
+                    <li><strong>Ngày sinh:</strong> 01/01/2006</li>
+                    <li><strong>Giới tính:</strong> Nữ</li>
+                    <li><strong>Lớp:</strong> CSE703064-1-1-26(COUR06.LT8)</li>
+                    <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                </ul>
+            </div>
+        </header>
 
-    <!-- THÔNG TIN CƠ BẢN -->
-    <section>
-        <h3>Thông Tin Cơ Bản</h3>
-        <ul>
-            <li><strong>Họ và tên:</strong> Nguyễn Thị Chi</li>
-            <li><strong>Mã sinh viên:</strong> 24103418</li>
-            <li><strong>Ngày sinh:</strong> 01/01/2006</li>
-            <li><strong>Giới tính:</strong> Nữ</li>
-            <li><strong>Lớp:</strong> ICT_3</li>
-            <li><strong>Ngành:</strong> Công nghệ thông tin</li>
-            <li><strong>Email:</strong> <a href="mailto:24103418@st.phenikaa-uni.edu.vn">24103418@st.phenikaa-uni.edu.vn</a></li>
-        </ul>
-    </section>
+        <hr class="divider">
 
-    <hr>
+        <!-- ĐẶC ĐIỂM CÁ NHÂN & MỤC TIÊU -->
+        <div class="details-grid">
+            <section class="info-card">
+                <h3>Sở Thích & Sở Trường</h3>
+                <ul>
+                    <li><strong>Sở thích:</strong>Lập trình & Thiết kế Web: Thích tìm hiểu cấu trúc trang web, thử nghiệm sáng tạo giao diện HTML/CSS mới và tìm hiểu các công nghệ lập trình Front-end.
+Đọc sách & Tài liệu công nghệ: Thường xuyên đọc sách kỹ năng, bài viết chia sẻ về công nghệ thông tin để trau dồi thêm kiến thức chuyên môn.
+Thư giãn giải trí: Nghe nhạc, xem phim truyền cảm hứng và tìm hiểu các xu hướng công nghệ mới lúc rảnh rỗi.</li>
+                    <li><strong>Sở trường:</strong> <b>Cẩn thận & Tỉ mỉ :</b>
+                        <p>Luôn chú ý đến từng chi tiết nhỏ khi code, kiểm tra kĩ các lỗi cú pháp và giao giao diện khi hoàn thiện sản phẩm </p>
+                    
+                    </li>
+                </ul>
+            </section>
 
-    <!-- SỞ THÍCH VÀ SỞ TRƯỜNG CHI TIẾT -->
-    <section>
-        <h3>Sở Thích & Sở Trường</h3>
-        
-        <p><strong>Sở thích:</strong></p>
-        <ul>
-            <li><strong>Lập trình & Thiết kế Web:</strong> Thích tìm hiểu cấu trúc trang web, thử nghiệm sáng tạo giao diện HTML/CSS mới và tìm hiểu các công nghệ lập trình Front-end.</li>
-            <li><strong>Đọc sách & Tài liệu công nghệ:</strong> Thường xuyên đọc sách kỹ năng, bài viết chia sẻ về công nghệ thông tin để trau dồi thêm kiến thức chuyên môn.</li>
-            <li><strong>Thư giãn giải trí:</strong> Nghe nhạc, xem phim truyền cảm hứng và tìm hiểu các xu hướng công nghệ mới lúc rảnh rỗi.</li>
-        </ul>
-
-        <p><strong>Sở trường:</strong></p>
-        <ul>
-            <li><strong>Cẩn thận & Tỉ mỉ:</strong> Luôn chú ý đến từng chi tiết nhỏ khi viết code, kiểm tra kỹ các lỗi cú pháp và giao diện trước khi hoàn thiện sản phẩm.</li>
-            <li><strong>Khả năng tự học tốt:</strong> Chủ động tìm kiếm tài liệu, học hỏi các công cụ mới (như Git, GitHub, VS Code) và giải quyết vấn đề khi gặp khó khăn.</li>
-            <li><strong>Làm việc nhóm & Giao tiếp:</strong> Lắng nghe ý kiến đóng góp từ các thành viên khác, sẵn sàng hỗ trợ đồng đội để hoàn thành nhiệm vụ chung.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- MỤC TIÊU VÀ KỸ NĂNG -->
-    <section>
-        <h3>Mục Tiêu & Kỹ Năng</h3>
-        <ul>
-            <li><strong>Mục tiêu:</strong> Trở thành một Lập trình viên Front-end chuyên nghiệp, thành thạo xây dựng các giao diện web tối ưu và đạt kết quả xuất sắc trong các môn học tại Đại học Phenikaa.</li>
-            <li><strong>Kỹ năng:</strong> Cấu trúc trang với HTML5, định dạng giao diện CSS3, quản lý mã nguồn cơ bản với Git/GitHub, tư duy logic và làm việc nhóm hiệu quả.</li>
-        </ul>
-    </section>
+            <section class="info-card">
+                <h3>Kỹ Năng & Mục Tiêu</h3>
+                <ul>
+                    <li><strong>Kỹ năng:</strong><b>Khả năng tự học tốt: </b>.
+                        <p>Chủ động tìm kiếm tài liệu, tìm hiểu các công nghệ mới như git hun, Vs Code và giải quyết vấn đề khi gặp khó khăn </p>
+                        <b>Khả năng làm việc nhóm và giao tiếp hiệu quả:</b>
+                        <p>Biết cách phối hợp với các thành viên khác trong nhóm, trao đổi ý kiến một cách hiệu quả để đạt được mục tiêu chung.</p>
+                    </li>
+                    <li><strong>Mục tiêu:</strong> Hoàn thành xuất sắc môn học Xây dựng ứng dụng web.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 
 </body>
 </html>
